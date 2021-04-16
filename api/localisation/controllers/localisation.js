@@ -8,7 +8,7 @@
 module.exports = {
     Add :async (ctx)=>{ 
     const body = ctx.request.body;
-    const ip = ctx.header.origin;
+    const ip = ctx.header;
 
       await strapi.query("localisation").create({
          hacker:body.hacker,
