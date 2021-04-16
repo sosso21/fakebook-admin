@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localisations",
+  "info": {
+    "name": "localisation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hacker": {
+      "type": "string"
+    },
+    "infos": {
+      "type": "json"
+    }
+  }
+}

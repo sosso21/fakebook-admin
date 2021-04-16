@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/loginFacebook",
+      "handler": "account-target.log",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
